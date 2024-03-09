@@ -1,21 +1,25 @@
 <template>
   <div class="home">
-    <img src="../assets/victor.jpg" class="img-rounded"/>
+    <div class="img-rounded"></div>
     <HelloWorld msg="Victor Prudhon"/>
   </div>
 </template>
 <style>
 .home {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .img-rounded {
-  object-fit: cover;
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  background-image: url('/src/assets/victor.jpg');
+  background-size: cover;
+  background-position: center;
   border: #01C38D solid;
-  flex-grow: 1;
+  margin-left: 15% !important;
+  margin-right: 15% !important;
+  margin: auto;
 }
 </style>
 <script>
