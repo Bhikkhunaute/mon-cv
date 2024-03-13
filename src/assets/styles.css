@@ -1,5 +1,5 @@
-body {
-    background: #050822;
+.app {
+    background: linear-gradient(135deg, #050822, #01C38D);;
 }
 p {
     color: #FFFFFF;
