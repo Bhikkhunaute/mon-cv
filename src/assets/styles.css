@@ -1,6 +1,9 @@
 .app {
     background: linear-gradient(135deg, #050822, #01C38D);;
 }
+body {
+    margin: 0;
+}
 p {
     color: #FFFFFF;
 }
