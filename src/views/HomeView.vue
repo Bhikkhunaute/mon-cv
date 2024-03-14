@@ -9,7 +9,7 @@
       </div>
       <div class="SideBarRight">
         <HelloWorld msg="Victor Prudhon" />
-        <ExperienceTimeline />
+        <ExperienceTimeline title="Expériences professionnelles" />
       </div>
     </div>
   </div>

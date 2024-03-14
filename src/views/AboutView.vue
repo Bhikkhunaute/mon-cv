@@ -1,8 +1,10 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <InformationsPersonnelles nom="Victor" num="0329293"/>
-    <InformationsPersonnelles nom="Victor" num="0329293"/>
+    <InformationsPersonnelles 
+      nom="Victor" 
+      num="0329293" 
+    />
   </div>
 </template>
 <script>
@@ -10,7 +12,7 @@
 import InformationsPersonnelles from '@/components/InformationsPersonnelles.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'AboutView',
   components: {
     InformationsPersonnelles
   }

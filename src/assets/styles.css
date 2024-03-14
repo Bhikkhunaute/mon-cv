@@ -7,3 +7,10 @@ body {
 p {
     color: #FFFFFF;
 }
+.SideBarRight {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.SideBarRight h2 {
+    text-align: left;
+}
