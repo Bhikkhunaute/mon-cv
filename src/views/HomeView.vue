@@ -10,6 +10,7 @@
       <div class="SideBarRight">
         <HelloWorld msg="Victor Prudhon" />
         <ExperienceTimeline title="Expériences professionnelles" />
+        <FormationTimeline title="Formations" />
       </div>
     </div>
   </div>
@@ -20,6 +21,7 @@ import SkillsSection from '@/components/Skills.vue'
 import ExperienceTimeline from '@/components/ExpPro.vue'
 import Competences from '@/components/Competences.vue'
 import Hobbies from '@/components/Hobbies.vue'
+import FormationTimeline from '@/components/Formations.vue'
 
 export default {
   name: 'HomeView',
@@ -29,6 +31,7 @@ export default {
     ExperienceTimeline,
     Competences,
     Hobbies,
+    FormationTimeline,
   }
 }
 </script>
@@ -60,5 +63,6 @@ export default {
   background-position: center;
   border: #01C38D solid;
   margin: auto;
+  margin-bottom: 5rem;
 }
 </style>

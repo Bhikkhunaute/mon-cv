@@ -1,19 +1,23 @@
-<!-- InformationsPersonnelles.vue -->
-
 <template>
-    <div class="informations-personnelles">
-      <h2>Informations Personnelles</h2>
-      <p>{{ nom }}</p>
-      <p>{{ num }}</p>
-    </div>
-  </template>
+  <div class="informations-personnelles">
+    <h2>Informations Personnelles</h2>
+    <p>{{ nom }}</p>
+    <p>{{ num }}</p>
+  </div>
+</template>
 
 <script>
 export default {
   name: 'InformationsPersonnelles',
   props: {
-    nom: String,
-    num: Number
+    nom: {
+      type: String,
+      default: '',
+    },
+    num: {
+      type: Number,
+      default: 0,
+    }
   }
 }
 </script>

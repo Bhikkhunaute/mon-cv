@@ -1,17 +1,13 @@
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <div class="skills">
+    <div class="competences">
       <div 
-        class="icons"
+        v-for="(tech, index) in technologies" 
+        :key="index" 
+        class="tech"
       >
-        <div 
-          v-for="(tech, index) in technologies" 
-          :key="index" 
-          class="tech"
-        >
-          <span>{{ tech.name }}</span>
-        </div>
+        <span>{{ tech.name }}</span>
       </div>    
     </div>
   </div>
@@ -37,28 +33,20 @@
           { name: 'Animation' },
           { name: 'Optimisation des performances' },
           { name: 'Méthodologie Agile' },
-          // Ajoutez ici d'autres technologies avec leurs icônes
+          { name: 'Autonome' },
+          { name: 'Travail en équipe' },
+          { name: 'Bonne humeur' },
         ];
       }
     }
   };
   </script>
   <style>
-  .icons {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: baseline;
-      flex-wrap: wrap;
-  }
-  .tech {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-basis: calc(33.33% - 20px);
-  }
-  .tech > svg {
-    width: 3rem;
-    height: auto;
-  }
+.competences {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3rem;
+}
   </style>
   

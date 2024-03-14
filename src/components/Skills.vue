@@ -38,7 +38,7 @@ export default {
         { name: 'Javascript', icon: faJs },
         { name: 'Bootstrap', icon: faBootstrap },
         { name: 'Vue.js', icon: faVuejs },
-        { name: 'Github', icon: faGit },
+        { name: 'Git', icon: faGit },
         { name: 'Github', icon: faGithub },
         // Ajoutez ici d'autres technologies avec leurs icônes
       ];

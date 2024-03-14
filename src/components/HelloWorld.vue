@@ -12,7 +12,10 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: {
+    type: String,
+    default : '',
+  }
   }
 }
 </script>
@@ -22,6 +25,9 @@ export default {
 .hello{
   flex: 1;
   text-align: left;
+  color: white;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
 }
 h3 {
   margin: 40px 0 0;
