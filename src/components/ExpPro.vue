@@ -38,7 +38,6 @@ export default {
         { id: 3, title: "Freelance - Webdesign/Developpeur", date: "2016 - Décembre 2019", location: "Victor Prudhon", description: "loremp ipsum dolores" },
         { id: 4, title: "Webmaster", date: "Mars 2018 - Mars 2019", location: "Médiathèque Marie Rouanet", description: "loremp ipsum dolores" },
         { id: 5, title: "Developpeur Web", date: "Avril 2016 - Décembre 2016", location: "LIRMM Montpellier", description: "loremp ipsum dolores" },
-        // Ajoutez d'autres expériences professionnelles ici
       ]
     };
   }
