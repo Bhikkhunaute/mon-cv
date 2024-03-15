@@ -7,9 +7,14 @@ body {
 p {
     color: #FFFFFF;
 }
-
-.SideBarRight h2 {
+.alleft {
     text-align: left;
+}
+.right{
+    text-align: left;
+}
+.row {
+    margin: 0px !important;
 }
 .icons {
     display: flex;
@@ -26,4 +31,7 @@ p {
 .tech > svg {
   width: 3rem;
   height: auto;
+}
+.skills {
+    margin-bottom: 3em;
 }

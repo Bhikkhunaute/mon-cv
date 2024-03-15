@@ -2,9 +2,11 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h3>Développeur front-end, 30 ans, Permis B</h3>
-    <p>Actuellement en poste en tant Webmaster au sein de l'Ecole nationale de la magistrature.</p>
-    <p>Passioné par la culture du web, le développement et le design, j'ai su lier technique, graphisme et optimisation.</p>
-    <p>Je suis optimiste, aimant apprendre tous les jours afin de me perfectionner et donner le meilleur de moi-même. </p>
+    <p>
+      Actuellement en poste en tant Webmaster au sein de l'Ecole nationale de la magistrature.<br>
+      Passioné par la culture du web, le développement et le design, j'ai su lier technique, graphisme et optimisation.<br>
+      Je suis optimiste, aimant apprendre tous les jours afin de me perfectionner et donner le meilleur de moi-même. 
+    </p>
   </div>
 </template>
 

@@ -1,21 +1,29 @@
 <template>
   <div class="experience">
     <h2>{{ title }}</h2>
-    <div class="timeline">
-      <div 
-        v-for="experience in experiences" 
-        :key="experience.id" 
-        class="event"
-      >
+    <div class="timeline" />
+    <div 
+      v-for="experience in experiences" 
+      :key="experience.id" 
+      class="row align-items-center mb-5"
+    >
+      <div class="col-md-1">
         <div class="dot" />
-        <h3>{{ experience.title }}</h3>
-        <div class="info">
-          <p>{{ experience.location }}</p>
-          <p>{{ experience.date }}</p>
+      </div>
+      <div class="col-md-10">
+        <div class="row">
+          <h3>{{ experience.title }}</h3>
         </div>
-        <div class="info">
+        <div class="row">
+          <div class="col-md-4">
+            <p>{{ experience.location }}</p>
+          </div>
+          <div class="col-md-4">
+            <p>{{ experience.date }}</p>
+          </div>
+        </div>
+        <div class="row">
           <p>{{ experience.description }}</p>
-          <p>{{ experience.missions }}</p>
         </div>
       </div>
     </div>
@@ -60,37 +68,19 @@ h3 {
   flex-direction: column;
   margin-left: 8rem;
 }
-.info {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 5rem;
-}
-.event {
-  position: relative;
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  margin-left: 3rem;
-  align-items: flex-start;
-}
-
 .dot {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
   background-color: #fff;
-  position: absolute;
-  left: -5.7rem; /* ajustez la position de la boule par rapport à la ligne */
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .timeline::before {
   content: "";
 position: absolute;
 top: 120px;
-left: 5rem;
-height: calc(100% - 255px);
+left: 1.4rem;
+height: calc(100% - 175px);
 width: 10px;
 background-color: #fff;
 }

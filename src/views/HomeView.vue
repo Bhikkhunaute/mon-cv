@@ -1,14 +1,25 @@
 <template>
   <div>
-    <div class="rawfor2">
-      <div class="SideBarLeft">
-        <div class="img-rounded" />
+    <div class="row">
+      <div class="col-md-2 offset-1">
+        <img 
+          src="../assets/victor.jpg" 
+          class="img-fluid pictured" 
+        >
+      </div>
+      <div class="col-md-8 offset-1">
+        <HelloWorld msg="Victor Prudhon" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 offset-1 left">
+        <AboutMe title="Contact" />
         <SkillsSection title="Technologies" />
         <Competences title="Compétences" />
+        <SavoirEtre title="Savoir être" />
         <Hobbies title="Hobbies" />
       </div>
-      <div class="SideBarRight">
-        <HelloWorld msg="Victor Prudhon" />
+      <div class="col-md-8 offset-1 right">
         <ExperienceTimeline title="Expériences professionnelles" />
         <FormationTimeline title="Formations" />
       </div>
@@ -22,6 +33,8 @@ import ExperienceTimeline from '@/components/ExpPro.vue'
 import Competences from '@/components/Competences.vue'
 import Hobbies from '@/components/Hobbies.vue'
 import FormationTimeline from '@/components/Formations.vue'
+import SavoirEtre from '@/components/Savoiretre.vue'
+import AboutMe from '@/components/about.vue'
 
 export default {
   name: 'HomeView',
@@ -32,35 +45,18 @@ export default {
     Competences,
     Hobbies,
     FormationTimeline,
+    SavoirEtre,
+    AboutMe,
   }
 }
 </script>
 <style>
-.rawfor2 {
-  display: flex;
-}
-.SideBarLeft {
-  flex: 0 0 30%;
+.left {
+  text-align: left;
   color: white;
 }
-.SideBarLeft h2 {
-  text-align: left;
-  margin-left: 3rem;
-}
-.SideBarRight {
-  flex: 0 0 70%;
-}
-.home {
-  display: flex;
-  justify-content: space-between;
-}
-.img-rounded {
-  width: 250px;
-  height: 250px;
+.pictured {
   border-radius: 50%;
-  background-image: url('/src/assets/victor.jpg');
-  background-size: cover;
-  background-position: center;
   border: #01C38D solid;
   margin: auto;
   margin-bottom: 5rem;

@@ -1,14 +1,18 @@
 <template>
-  <div class="app">
-    <nav>
-      <router-link to="/">
-        Home
-      </router-link>
-      <router-link to="/about">
-        Portfolio
-      </router-link>
-    </nav>
-    <router-view />
+  <div class="container-fluid">
+    <div class="app">
+      <div class="row">
+        <nav class="col-xs-12">
+          <router-link to="/">
+            Home
+          </router-link>
+          <router-link to="/about">
+            Portfolio
+          </router-link>
+        </nav>
+      </div>
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -32,5 +36,8 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+.container-fluid {
+  padding: 0px !important;
 }
 </style>

@@ -6,6 +6,7 @@ import './assets/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faVuejs } from '@fortawesome/free-brands-svg-icons';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 library.add(faVuejs);
 
