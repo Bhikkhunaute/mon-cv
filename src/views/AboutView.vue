@@ -1,26 +1,23 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-    <InformationsPersonnelles 
-      nom="Victor" 
-      num="0329293" 
-    />
+  <div class="row">
+    <div class="col-12">
+      <h1>Portfolio</h1>
+    </div>
+    <div class="col-12 col-md-10 offset-1">
+      <PortfolioSites title="Sites" />
+    </div>
   </div>
 </template>
 <script>
 // @ is an alias to /src
-import InformationsPersonnelles from '@/components/InformationsPersonnelles.vue'
+import PortfolioSites from '@/components/PortSites.vue'
 
 export default {
   name: 'AboutView',
   components: {
-    InformationsPersonnelles
+    PortfolioSites
   }
 }
 </script>
 <style>
-.about{
-  display: flex;
-  justify-content: space-evenly;
-}
 </style>

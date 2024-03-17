@@ -8,9 +8,10 @@
       class="row align-items-center mb-5"
     >
       <div class="col-md-1">
+        <div class="vertical-ligne" />
         <div class="dot" />
       </div>
-      <div class="col-md-10">
+      <div class="col-md-10 offset-1">
         <div class="row">
           <h3>{{ experience.title }}</h3>
         </div>
@@ -83,5 +84,9 @@ left: 1.4rem;
 height: calc(100% - 175px);
 width: 10px;
 background-color: #fff;
+}
+.vertical-ligne {
+  border-right: 10px solid white;
+  height: 100%;
 }
 </style>

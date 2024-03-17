@@ -1,25 +1,25 @@
 <template>
   <div>
-    <div class="row">
-      <div class="col-md-2 offset-1">
+    <div class="row align-items-end">
+      <div class="col-10 col-md-2 col-xl-2 offset-1">
         <img 
           src="../assets/victor.jpg" 
           class="img-fluid pictured" 
         >
       </div>
-      <div class="col-md-8 offset-1">
+      <div class="col-10 col-md-7 col-xl-7 offset-1">
         <HelloWorld msg="Victor Prudhon" />
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2 offset-1 left">
+      <div class="col-10 col-md-2 offset-1 left">
         <AboutMe title="Contact" />
         <SkillsSection title="Technologies" />
         <Competences title="Compétences" />
         <SavoirEtre title="Savoir être" />
         <Hobbies title="Hobbies" />
       </div>
-      <div class="col-md-8 offset-1 right">
+      <div class="col-10 col-md-7 offset-1 right">
         <ExperienceTimeline title="Expériences professionnelles" />
         <FormationTimeline title="Formations" />
       </div>

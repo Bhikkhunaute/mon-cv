@@ -9,7 +9,7 @@
       <div class="col-md-4">
         <p><strong>{{ aboutme.title }}</strong></p>
       </div>
-      <div class="col-md-7 alleft">
+      <div class="col-md-8 alleft">
         <p>{{ aboutme.txt }}</p>
       </div>
     </div>

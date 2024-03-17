@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="app">
       <div class="row">
-        <nav class="col-xs-12">
+        <nav class="col-12">
           <router-link to="/">
             Home
           </router-link>
