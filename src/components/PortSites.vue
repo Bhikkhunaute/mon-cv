@@ -1,6 +1,8 @@
 <template>
   <div class="row">
-    <h2>{{ title }}</h2>
+    <h2 class="mb-4 mt-4">
+      {{ title }}
+    </h2>
     <div
       v-for="site in sites" 
       :key="site.id"
@@ -9,13 +11,13 @@
       <div class="hovereffect">
         <img 
           class="img-responsive" 
-          :src="site.src"
+          :src="require(`../assets/${site.src}`)"
           alt=""
         >
         <div class="overlay">
           <h2>{{ site.name }}</h2>
           <a 
-            class="info" 
+            class="info"
             href="#"
           >link here</a>
         </div>
@@ -30,21 +32,24 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Sites',
+      default: '',
+    },
+    sitesData: {
+      type: Array,
+      default: () => [],
     }
   },
-  data() {
-      return {
-        sites: [
-          { id: 1, name: "Intranet ENM", src: "@/assets/logo.png" },
-          { id: 1, name: "Intranet ENM", src: "/assets/logo.png" },
-          { id: 1, name: "Intranet ENM", src: "../assets/victor.jpg" },
-          { id: 1, name: "Intranet ENM", src: "../assets/logo.png" },
-          { id: 1, name: "Intranet ENM", src: "../assets/logo.png" },
-        ]
-      };
+  computed: {
+    sites() {
+      return this.sitesData.map(site => ({
+        ...site,
+        src: `${site.src}`
+      }));
     }
+  }
 }
+
+  
 </script>
 
 <style scoped>
