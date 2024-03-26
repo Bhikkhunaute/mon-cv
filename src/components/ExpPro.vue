@@ -3,7 +3,7 @@
     <h2>{{ title }}</h2>
     <div class="timeline" />
     <div 
-      v-for="experience in experiences" 
+      v-for="experience in processedExperiences" 
       :key="experience.id" 
       class="row align-items-center mb-5"
     >
@@ -37,19 +37,19 @@ export default {
   props: {
     title: {
       type: String,
-      default: ''
+      default: '',
+    },
+    experiencesData: {
+      type: Array,
+      default: () => [],
     }
   },
-  data() {
-    return {
-      experiences: [
-        { id: 1, title: "Webmaster", date: "Mars 2021 - Mars 2025", location: "Ecole Nationale de la Magistrature", description: "loremp ipsum dolores", missions: "<ul><li>testtst</li></ul>lorem ipsum" },
-        { id: 2, title: "Chef de projet Web", date: "Mars 2020 - Septembre 2020", location: "EnjoyMonCSE", description: "loremp ipsum dolores", missions: "lorem ipsum" },
-        { id: 3, title: "Freelance - Webdesign/Developpeur", date: "2016 - Décembre 2019", location: "Victor Prudhon", description: "loremp ipsum dolores", missions: "lorem ipsum" },
-        { id: 4, title: "Webmaster", date: "Mars 2018 - Mars 2019", location: "Médiathèque Marie Rouanet", description: "loremp ipsum dolores", missions: "lorem ipsum" },
-        { id: 5, title: "Developpeur Web", date: "Avril 2016 - Décembre 2016", location: "LIRMM Montpellier", description: "loremp ipsum dolores", missions: "lorem ipsum" },
-      ]
-    };
+    computed: {
+    processedExperiences() {
+      return this.experiencesData.map(experience => ({
+        ...experience,
+      }));
+    }
   }
 };
 </script>
@@ -79,9 +79,9 @@ h3 {
 .timeline::before {
   content: "";
 position: absolute;
-top: 120px;
+top: calc(100% - 86%);
 left: 1.4rem;
-height: calc(100% - 175px);
+height: calc(100% - 42.2vh);
 width: 10px;
 background-color: #fff;
 }

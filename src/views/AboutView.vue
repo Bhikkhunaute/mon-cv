@@ -5,7 +5,7 @@
     </div>
     <div class="col-10 offset-1">
       <Portfolio 
-        :title="'Sites'" 
+        :title="'Developpement'" 
         :sites-data="sites1" 
       />
       <Portfolio 
@@ -13,7 +13,7 @@
         :sites-data="sites2" 
       />
       <Portfolio 
-        :title="'Dev'" 
+        :title="'Dessin'" 
         :sites-data="sites3" 
       />
     </div>
@@ -43,9 +43,9 @@ export default {
         { id: 3, name: "Dessinateur", src: "logo.png" },
       ],
       sites3: [
-        { id: 1, name: "Logo V", src: "logo.png" },
-        { id: 2, name: "Webdesign", src: "logo.png" },
-        { id: 3, name: "Dessinateur", src: "logo.png" },
+        { id: 1, name: "Logo V", src: "drawing/1.jpg" },
+        { id: 2, name: "Webdesign", src: "drawing/2.jpg" },
+        { id: 3, name: "Dessinateur", src: "drawing/3.jpg" },
       ]
     };
   }
