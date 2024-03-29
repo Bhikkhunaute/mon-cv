@@ -10,7 +10,7 @@
     >
       <div class="hovereffect">
         <img 
-          class="img-responsive" 
+          class="img-fluid" 
           :src="require(`../assets/${site.src}`)"
           alt=""
         >

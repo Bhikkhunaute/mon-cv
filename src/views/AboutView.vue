@@ -33,8 +33,8 @@ export default {
       sites1: [
         { id: 1, name: "Intranet ENM", src: "logo.png" },
         { id: 2, name: "Site internet ENM", src: "logo.png" },
-        { id: 3, name: "Site Ecoor", src: "logo.png" },
-        { id: 4, name: "Site X", src: "logo.png" },
+        { id: 3, name: "Site Ecoor", src: "sites/ecoor.png" },
+        { id: 4, name: "Site Victor Prudhon", src: "sites/victor.png" },
         { id: 5, name: "Site X", src: "logo.png" },
       ],
       sites2: [
